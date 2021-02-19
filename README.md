@@ -83,7 +83,7 @@ success('It worked!', { autoHide: false });
 | Option             | Description                                                                                                                                   | Default      |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
 | `autoHide`         | Whether or not each toast should automatically disappear after `autoHideDuration` seconds                                                     | `true`       |
-| `autoHideDuration` | How long (in seconds) until toasts disappear                                                                                                  | `5000`       |
+| `autoHideDuration` | How long (in milliseconds) until toasts disappear                                                                                             | `5000`       |
 | `position`         | Where should toast appear? One of: `top-left`, `top-center`, `top-right`                                                                      | `top-center` |
 | `onClick`          | A handler to capture clicks on the toast. The handler receives an object as its only argument with a `dismiss` function to dismiss the toast. | _None_       |
 | `className`        | A class name to attach to the toast                                                                                                           | _None_       |
