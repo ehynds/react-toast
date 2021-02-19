@@ -1,0 +1,48 @@
+{
+  "name": "@ehynds/react-toast",
+  "version": "1.0.0",
+  "description": "React toast notification component",
+  "main": "dist/bundle.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "npm run format:check && npm run lint",
+    "prepublish": "npm run build",
+    "lint": "eslint --ext .ts,.tsx .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "start": "webpack serve -c webpack.dev.config.js",
+    "build": "rm -rf ./dist && webpack -c webpack.lib.config.js"
+  },
+  "author": "Eric Hynds (https://github.com/ehynds)",
+  "homepage": "https://github.com/ehynds/react-toast",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "toast",
+    "notification",
+    "component"
+  ],
+  "devDependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "html-webpack-plugin": "^5.1.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.22.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "peerDependencies": {
+    "react": ">= 16",
+    "react-dom": ">= 16"
+  }
+}
